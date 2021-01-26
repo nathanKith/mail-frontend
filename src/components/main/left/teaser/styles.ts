@@ -1,5 +1,6 @@
 export default locator => {
-	return {
+
+	const styles = {
 		'.mimic_left .teaser': {
 			'cursor': 'pointer',
 			'word-wrap': 'break-word',
@@ -49,7 +50,7 @@ export default locator => {
 			'font-size': locator.calcString(11, 'px'),
 		},
 
-		'.mimic_left .teaser:hover .picture img': {
+		'.mimic_left .teaser:hover .picture div': {
 			'transform': 'scale(1.02)',
 		},
 
@@ -61,4 +62,6 @@ export default locator => {
 			'text-decoration': 'underline',
 		},
 	};
+
+	return styles;
 };

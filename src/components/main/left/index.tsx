@@ -17,7 +17,7 @@ export default class extends React.Component<any> {
 			locator,
 		} = this.props;
 
-		style = updateStyle(style, locator, sheet(locator));
+		style = updateStyle(style, locator, sheet(locator, this.props.items));
 	}
 
 	render() {

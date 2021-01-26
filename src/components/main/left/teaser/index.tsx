@@ -39,11 +39,7 @@ export default ({item, index, transform}) => {
 
 			{image_src && (
 				<Block className={transform('picture')}>
-					<Image
-						src={image_src}
-						width={image_width}
-						height={image_height}
-					/>
+					<Image className={transform(`picture_img${index}`)}/>
 				</Block>
 			)}
 
