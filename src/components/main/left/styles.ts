@@ -16,7 +16,6 @@ export default (locator, items) => {
 	Object.assign(styles, teaserSheet(locator));
 
 	if (items) {
-		console.log("я здесь");
 		let newClasses = {};
 
 		items.forEach((item, index) => {
