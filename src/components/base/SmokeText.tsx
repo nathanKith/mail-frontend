@@ -5,7 +5,7 @@ export default ({children}) => {
 
 	if (/м.*о.*с.*к.*в.*а/i.test(children)) {
 		// english letters instead of russian
-		children = children.replaceAll('о', 'o').replaceAll('с', 'c').replaceAll('а', 'а');
+		children = children.replaceAll('о', 'o').replaceAll('с', 'c').replaceAll('а', 'a');
 	}
 
 	if (/18\+/.test(children)) {
