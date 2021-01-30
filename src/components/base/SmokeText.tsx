@@ -14,7 +14,7 @@ export default ({children}) => {
 		return (
 			<span>
 				{letters[0]}
-				<span style={{fontSize: '0'}}>ахтунг</span>
+				<span style={{fontSize: '0'}}>костыль</span>
 				<span>{letters[1]}</span>
 			</span>
 		);

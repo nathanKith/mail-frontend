@@ -16,19 +16,19 @@ afterEach(() => {
     container = null;
 });
 
-it("renders with or without a name", () => {
+it("render some tests", () => {
     act(() => {
         render(<SmokeText>Москва</SmokeText>, container);
     });
     expect(container.textContent).toBe('Мocквa');
 
     act(() => {
-        render(SmokeText({children: '18+'}), container);
+        render(<SmokeText>18+</SmokeText>, container);
     });
-    expect(container.textContent).toBe('18ахтунг+');
+    expect(container.textContent).toBe('18костыль+');
 
     act(() => {
-        render(SmokeText({children: 'Simple text'}), container);
+        render(<SmokeText>Simple text</SmokeText>, container);
     });
     expect(container.textContent).toBe('Simple text');
 });
